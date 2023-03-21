@@ -1,0 +1,60 @@
+.errorBody{
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.errorAction{
+    z-index: 10;
+    position: absolute;
+    width: 60vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0px;
+    border-radius: 20px;
+}
+header{
+    background-color: blueviolet;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+}
+.errorMessage{
+    color: blueviolet;
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+.errorButton{
+    background-color: blueviolet;
+    color: white;
+    font-size: 19px;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.errorButton:active{
+    background-color: white;
+    color: blueviolet;
+}
+
+@media (max-width:768px) {
+    .errorAction{
+        width: 90vw;
+        height: fit-content;
+    }
+    .errorButton{
+        width: 40%;
+    }
+}

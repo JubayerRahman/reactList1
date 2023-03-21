@@ -1,0 +1,74 @@
+.NameForm{
+    background-color: white;
+    width: 60vw;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 10%;
+}
+form{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label{
+    font-size: 18px;
+    font-weight: bold;
+    color: #282c34;
+    margin-right: 20px;
+}
+
+input{
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #282c34;
+}
+input:hover{
+    border: 1px solid  green;
+}
+
+input:focus{
+    outline: none;
+}
+form button{
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #282c34;
+    color: white;
+    border-radius: 5px;
+}
+form button:active{
+    background-color: white;
+    color: #282c34;
+}
+
+@media (max-width:800px) {
+    .NameForm{
+        width: 80vw;
+        margin-top: 20px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 30vh;
+        align-items: center;
+    }
+    button{
+        width: 100%;
+    }
+    label{
+        width: 15%;
+        text-align: left;
+        margin-left: 0px;
+    }
+    input{
+        width:80%;
+    }
+    form div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

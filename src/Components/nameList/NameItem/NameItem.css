@@ -1,0 +1,25 @@
+.nameItem{
+    background-color: white;
+    color: #282c34;
+    width: 60vw;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid darkgray;
+}
+.nameItem h1{
+    font-size: 18px;
+}
+.nameItem .name, .nameItem .age{
+    width: 50%;
+    text-align: left;
+}
+
+@media (max-width:768px) {
+   .nameItem{
+    width: 80vw;
+   }
+}
